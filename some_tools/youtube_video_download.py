@@ -11,6 +11,7 @@ def download_mp4(urls, output_path):
     """
     需要下载you-get:
         pip install you-get -i https://pypi.douban.com/simple
+    参考:https://www.cnblogs.com/jiangyuzhen/p/10926919.html
     """
     for url in urls:
         cmd = f"you-get {url} -o {output_path}"
