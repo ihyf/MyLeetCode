@@ -24,7 +24,7 @@ def get_all_mp3(ffmpeg_path, mp3_files_path, jpg_path):
         for name in files:
             if name.endswith("mp3"):
                 mp3_path = os.path.join(root, name)
-                prefix = name.split(".")[0]
+                prefix = name[:name.rfind(".")]
                 cmd = f"{ffmpeg_path} -loop 1 -f image2 -framerate 1 -pix_fmt yuv420p -i {jpg_path} -i {mp3_path} -c:v libx264 -c:a copy -map 0:0 -map 1:a -s {resolution}  -shortest {prefix}.mp4"
                 print(cmd)
                 x = os.popen(cmd)
