@@ -65,3 +65,4 @@ class TestCase(unittest.TestCase):
         ffmpeg_path = r"D:\app\ffmpeg_bin\ffmpeg.exe"
         mp4_files_path = r"D:\code\MyLeetCode\some_tools\mp4_files"
         self.video.get_mp3_in_mp4(ffmpeg_path, mp4_files_path)
+
