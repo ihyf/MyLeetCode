@@ -59,7 +59,8 @@ class TestCase(unittest.TestCase):
         ffmpeg_path = r"D:\app\ffmpeg_bin\ffmpeg.exe"
         mp3_files_path = r"D:\code\MyLeetCode\some_tools\files"
         jpg_path = r"D:\code\MyLeetCode\some_tools\jpg\xiaolei.jpg"
-        self.video.get_all_mp3(ffmpeg_path, mp3_files_path, jpg_path)
+        self.video.mp3_to_mp4(ffmpeg_path, mp3_files_path, jpg_path)
+        self.assertEqual("1", "1")
 
     def test_get_mp3_in_mp4(self):
         ffmpeg_path = r"D:\app\ffmpeg_bin\ffmpeg.exe"

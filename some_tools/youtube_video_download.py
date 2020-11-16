@@ -23,4 +23,4 @@ def download_mp4(urls, output_path):
 if __name__ == "__name__":
     output_path = r""
     urls = ["https://youtu.be/9Mpmk-r6dqU", "https://youtu.be/9Mpmk-r6dqU"]
-    download_mp4(output_path)
+    download_mp4(urls, output_path)
